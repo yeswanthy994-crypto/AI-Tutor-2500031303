@@ -11,3 +11,11 @@ def demo():
 @klu.get("/ask question")
 def ask():
     return {"message":"What is LLM","Answer":"LLM is a Large Language Model"}
+@klu.get("/student")
+def student():
+    return {"id":1,"name":"ram","gender":"male","course":"dsa"}   
+@klu.get("/students")
+def getstudents():
+    return [{"id":1,"name":"ram","gender":"male","course":"dsa"},
+            {"id":2,"name":"klu","gender":"male","course":"dsa"},
+            {"id":3,"name":"seetha","gender":"female","course":"dsa"}]
